@@ -1,0 +1,15 @@
+<suite name="Suite" parallel ="none">
+<parameter name= "hubURL" value ="http://10.10.4.86:4444/wd/hub"></parameter>
+  <test name="ChromeTest">
+  <parameter name= "browser" value ="chrome"></parameter>
+    <classes>
+      <class name="delta.main.DeltaDriver"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="FirefoxTest">
+  <parameter name= "browser" value ="firefox"></parameter>
+    <classes>
+      <class name="delta.main.DeltaDriver"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->                                                                        
